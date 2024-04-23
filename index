@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samsung Website</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #444;
+        padding: 10px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    .content {
+        padding: 20px;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Samsung</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h2>Samsung Products</h2>
+    <div class="product">
+        <img src="samsung-product.jpg" alt="Samsung Product">
+        <p>Description of the Samsung product goes here.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Samsung. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Your JavaScript code can go here
+</script>
+</body>
+</html>
