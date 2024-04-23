@@ -1,90 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samsung Website</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-    }
-    header {
-        background-color: #333;
-        color: white;
-        padding: 10px;
-        text-align: center;
-    }
-    nav {
-        display: flex;
-        justify-content: space-around;
-        background-color: #444;
-        padding: 10px;
-    }
-    nav a {
-        color: white;
-        text-decoration: none;
-    }
-    .content {
-        padding: 20px;
-    }
-    footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-    form {
-        margin: 20px auto;
-        padding: 10px;
-        background-color: #eee;
-        width: 80%;
-        text-align: center;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Website</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <h1>Samsung</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
-
-<div class="content">
-    <h2>Samsung Products</h2>
-    <div class="product">
-        <img src="samsung-product.jpg" alt="Samsung Product">
-        <p>Description of the Samsung product goes here.</p>
+    <header>
+        <h1>Samsung</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <button>Button 1</button>
+            <button>Button 2</button>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <p>Description of Product 1</p>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <p>Description of Product 2</p>
+        </div>
     </div>
-
-    <h2>Contact Us</h2>
-    <form>
-        <h3>Send us a message:</h3>
-        <input type="text" placeholder="Your Name" required><br><br>
-        <input type="email" placeholder="Your Email" required><br><br>
-        <textarea placeholder="Your Message" rows="4" required></textarea><br><br>
-        <button type="submit">Submit</button>
-    </form>
-</div>
-
-<footer>
-    <p>&copy; 2023 Samsung. All Rights Reserved.</p>
-</footer>
-
-<script>
-    document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Thank you for your message!');
-        // Additional form handling code can go here
-    });
-</script>
+    <footer>
+        &copy; 2021 Samsung. All Rights Reserved.
+    </footer>
+    <div class="form">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        // Add your JavaScript here
+    </script>
 </body>
 </html>
