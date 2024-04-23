@@ -39,6 +39,13 @@
         bottom: 0;
         width: 100%;
     }
+    form {
+        margin: 20px auto;
+        padding: 10px;
+        background-color: #eee;
+        width: 80%;
+        text-align: center;
+    }
 </style>
 </head>
 <body>
@@ -57,6 +64,15 @@
         <img src="samsung-product.jpg" alt="Samsung Product">
         <p>Description of the Samsung product goes here.</p>
     </div>
+
+    <h2>Contact Us</h2>
+    <form>
+        <h3>Send us a message:</h3>
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="email" placeholder="Your Email" required><br><br>
+        <textarea placeholder="Your Message" rows="4" required></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
 </div>
 
 <footer>
@@ -64,7 +80,11 @@
 </footer>
 
 <script>
-    // Your JavaScript code can go here
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for your message!');
+        // Additional form handling code can go here
+    });
 </script>
 </body>
 </html>
